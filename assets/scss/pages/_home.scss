@@ -1,1 +1,17 @@
 @import "../main.scss";
+main{
+    #location{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 1em 0;
+        background-color: $grey;
+        color: $light-black;
+        i{
+            margin-right: 1em;
+        }
+    }
+    #about{
+        
+    }
+}
