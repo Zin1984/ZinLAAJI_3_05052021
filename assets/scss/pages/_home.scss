@@ -10,8 +10,25 @@ main{
         i{
             margin-right: 1em;
         }
+        p{
+            font-weight: bold;
+        }
     }
     #about{
-        
+        display: flex;
+        flex-direction: column;
+        background-color: $light-grey;
+        padding: 2em;
+        text-align: center;
+        h2{
+            font-weight: bold;
+            font-size: 1.5em;
+            margin-bottom: 0.8em;
+        }
+        p{
+            font-weight: lighter;
+            margin-bottom: 2.5em;
+            font-size: 1.1em;
+        }
     }
     }
