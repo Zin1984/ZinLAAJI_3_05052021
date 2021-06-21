@@ -1,34 +1,94 @@
 @import "../main.scss";
-main{
-    #location{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding: 1em 0;
-        background-color: $grey;
-        color: $light-black;
-        i{
-            margin-right: 1em;
-        }
-        p{
-            font-weight: bold;
-        }
+main {
+  #location {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1em 0;
+    background-color: $grey;
+    color: $light-black;
+    i {
+      margin-right: 1em;
     }
-    #about{
-        display: flex;
-        flex-direction: column;
-        background-color: $light-grey;
-        padding: 2em;
-        text-align: center;
-        h2{
-            font-weight: bold;
-            font-size: 1.5em;
-            margin-bottom: 0.8em;
-        }
-        p{
-            font-weight: lighter;
-            margin-bottom: 2.5em;
-            font-size: 1.1em;
-        }
+    p {
+      font-weight: bold;
     }
+  }
+  #about {
+    display: flex;
+    flex-direction: column;
+    background-color: $light-grey;
+    padding: 2em;
+    text-align: center;
+    h2 {
+      font-weight: bold;
+      font-size: 1.5em;
+      margin-bottom: 0.8em;
     }
+    p {
+      font-weight: lighter;
+      margin-bottom: 2.5em;
+      font-size: 1.1em;
+    }
+  }
+  #operation {
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    h2 {
+      font-weight: bold;
+      font-size: 1.5em;
+      margin-bottom: 0.8em;
+    }
+    ol {
+        counter-reset: number;
+     
+
+      li {
+          display: flex;
+          align-items: center;
+          background-color: $light-grey;
+          margin-bottom: 0.8em;
+          padding: 1.5em 2em;
+          border-radius: 15px;
+          font-weight: 500;
+          position: relative;
+          &:hover{
+              background-color: $light-purple;
+              i{
+                  color:purple;
+              }
+          }
+          &::before{
+              display: flex;
+              align-items: center;
+              border-radius: 50%;
+              counter-increment: number;
+              content: counter(number);
+              background-color: $purple;
+              height: 24px;
+              width: 24px;
+              min-width: 24px;
+              justify-content: center;
+              color: white;
+              font-weight: 400;
+              position: absolute;
+              left: -12px;
+          }
+       i{
+           color: $grey-icon;
+           margin-right: 1em;
+       }   
+      }
+      #restaurants article a figure img {
+          border-radius: 10px 0 0 10px;
+          width: 100%;
+          height: 100%;
+          max-width: 100%;
+          object-fit: cover;
+        }
+      }
+
+    }
+  }
+}
