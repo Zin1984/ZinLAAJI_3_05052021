@@ -83,7 +83,7 @@ main {
   }
   #restaurants {
     background-color: $light-grey;
-    div{ 
+    >div{ 
       display: flex;
     flex-direction: column;
     
@@ -171,7 +171,7 @@ main {
       }
     }
     #restaurants{
-      div{
+      >div{
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -210,7 +210,7 @@ main {
     #restaurants{
       display: flex;
       flex-direction: column;
-      div{
+      >div{
         
         max-width: 1200px;
         align-self: center;
