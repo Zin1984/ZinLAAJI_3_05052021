@@ -157,40 +157,32 @@ main {
   }
 }
 @media screen and (min-width:992px){
-  #slider_container {
-		width: 100%;
-	}
+  main{
+    #operation{
+      ol{
+        width: 70%;
+        align-self: center;
+  
+      }
+    }
+    #restaurants{
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      h2{
+        flex-basis: 100%;
+      }
+      article{
+        flex-basis: 48%;
+      }
+    }
 
-	.slide:nth-child(2) img {
-		right: -331px;
-	}
-
-	.slide:nth-child(3) img {
-		left: auto;
-	}
-
-	.slide_svg {
-		width: 72%;
-		right: 50%;
-		transform: skew(-20deg) translateX(50%);
-	}
-
-	.slide_text {
-		left: 50%;
-		transform: translateX(-50%);
-		width: 100%;
-		text-align: center;
-	}
-
-	.slide_text::before {
-		left: auto;
-		margin-left: -13px;
-	}
+  }
+  
+  
 }
-@media all and (max-width: 1200px) { /* responsive grands écrans (992px-1200px) */
+@media all and (min-width: 1200px) { /* responsive grands écrans (992px-1200px) */
 	
-	#canvas_container {
-		width: 80%;
-	}
+
 }
-}
+
