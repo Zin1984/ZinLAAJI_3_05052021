@@ -1,6 +1,7 @@
 footer {
   background-color: $light-black;
-  padding: 2em;
+  div{
+    padding: 2em;
   h3 {
     color: $white;
     font-weight: bold;
@@ -19,6 +20,20 @@ footer {
           margin-right: 10px;
         }
       }
+    }
+  }
+
+  }
+  
+}
+@media all and (min-width: 1200px){
+  footer{
+    display: flex;
+    flex-direction: column;
+    div{
+      width: 1200px;
+      align-self: center;
+      max-width: 1200px;
     }
   }
 }
