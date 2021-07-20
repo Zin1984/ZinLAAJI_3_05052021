@@ -82,9 +82,11 @@ main {
     }
   }
   #restaurants {
-    display: flex;
-    flex-direction: column;
     background-color: $light-grey;
+    div{ 
+      display: flex;
+    flex-direction: column;
+    
     padding: 2em;
 
     h2 {
@@ -155,6 +157,9 @@ main {
       }
     }
   }
+
+    }
+    
 }
 @media screen and (min-width:992px){
   main{
@@ -166,6 +171,7 @@ main {
       }
     }
     #restaurants{
+      div{
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -176,13 +182,42 @@ main {
         flex-basis: 48%;
       }
     }
+    }
 
   }
   
   
 }
 @media all and (min-width: 1200px) { /* responsive grands écrans (992px-1200px) */
-	
+	main{
+    display: flex;
+    flex-direction: column;
+    #operation{
+      width: 1200px;
+      max-width: 1200px;
+      align-self: center;
+      ol{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        li{
+          flex-basis: 32%;
+        }
+      }
+
+    }
+    #restaurants{
+      display: flex;
+      flex-direction: column;
+      div{
+        width: 1200px;
+        max-width: 1200px;
+        align-self: center;
+
+      }
+    }
+  }
 
 }
 

@@ -168,78 +168,100 @@ main #operation {
         margin-right: 1em; }
 
 main #restaurants {
-  display: flex;
-  flex-direction: column;
-  background-color: #f6f6f6;
-  padding: 2em; }
-  main #restaurants h2 {
-    font-weight: bold;
-    font-size: 1.5em;
-    color: #101010;
-    margin-bottom: 0.8em; }
-  main #restaurants article {
-    background-color: white;
-    height: 250px;
-    margin-bottom: 1em;
-    border-radius: 15px; }
-    main #restaurants article figure {
-      height: 100%; }
-      main #restaurants article figure figcaption {
-        height: 30%;
-        padding: 1em;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between; }
-        main #restaurants article figure figcaption .animation-like i {
-          font-size: 1.5em; }
-          main #restaurants article figure figcaption .animation-like i:first-of-type {
-            display: none; }
-        main #restaurants article figure figcaption a {
+  background-color: #f6f6f6; }
+  main #restaurants div {
+    display: flex;
+    flex-direction: column;
+    padding: 2em; }
+    main #restaurants div h2 {
+      font-weight: bold;
+      font-size: 1.5em;
+      color: #101010;
+      margin-bottom: 0.8em; }
+    main #restaurants div article {
+      background-color: white;
+      height: 250px;
+      margin-bottom: 1em;
+      border-radius: 15px; }
+      main #restaurants div article figure {
+        height: 100%; }
+        main #restaurants div article figure figcaption {
+          height: 30%;
+          padding: 1em;
           display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          text-decoration: none; }
-          main #restaurants article figure figcaption a h3 {
-            font-weight: bold;
-            color: #101010; }
-          main #restaurants article figure figcaption a p {
-            color: #101010;
-            margin-bottom: 0.2em; }
-      main #restaurants article figure > a {
-        display: block;
-        height: 70%;
-        position: relative; }
-        main #restaurants article figure > a img {
-          -o-object-fit: cover;
-             object-fit: cover;
-          max-width: 100%;
-          height: 100%;
-          width: 100%;
-          border-top-left-radius: 15px;
-          border-top-right-radius: 15px; }
-        main #restaurants article figure > a span {
-          position: absolute;
-          right: 10px;
-          top: 10px;
-          background-color: #99E2D0;
-          color: #008766;
-          font-weight: 500;
-          padding: 5px;
-          border-radius: 2px; }
+          flex-direction: row;
+          justify-content: space-between; }
+          main #restaurants div article figure figcaption .animation-like i {
+            font-size: 1.5em; }
+            main #restaurants div article figure figcaption .animation-like i:first-of-type {
+              display: none; }
+          main #restaurants div article figure figcaption a {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            text-decoration: none; }
+            main #restaurants div article figure figcaption a h3 {
+              font-weight: bold;
+              color: #101010; }
+            main #restaurants div article figure figcaption a p {
+              color: #101010;
+              margin-bottom: 0.2em; }
+        main #restaurants div article figure > a {
+          display: block;
+          height: 70%;
+          position: relative; }
+          main #restaurants div article figure > a img {
+            -o-object-fit: cover;
+               object-fit: cover;
+            max-width: 100%;
+            height: 100%;
+            width: 100%;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px; }
+          main #restaurants div article figure > a span {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            background-color: #99E2D0;
+            color: #008766;
+            font-weight: 500;
+            padding: 5px;
+            border-radius: 2px; }
 
 @media screen and (min-width: 992px) {
   main #operation ol {
     width: 70%;
     align-self: center; }
-  main #restaurants {
+  main #restaurants div {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between; }
-    main #restaurants h2 {
+    main #restaurants div h2 {
       flex-basis: 100%; }
-    main #restaurants article {
+    main #restaurants div article {
       flex-basis: 48%; } }
 
 @media all and (min-width: 1200px) {
-  /* responsive grands écrans (992px-1200px) */ }
+  /* responsive grands écrans (992px-1200px) */
+  main {
+    display: flex;
+    flex-direction: column; }
+    main #operation {
+      width: 1200px;
+      max-width: 1200px;
+      align-self: center; }
+      main #operation ol {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between; }
+        main #operation ol li {
+          flex-basis: 32%; }
+    main #restaurants {
+      display: flex;
+      flex-direction: column; }
+      main #restaurants div {
+        width: 1200px;
+        max-width: 1200px;
+        align-self: center; } }
 
