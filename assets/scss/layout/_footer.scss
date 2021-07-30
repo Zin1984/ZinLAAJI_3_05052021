@@ -1,0 +1,39 @@
+footer {
+  background-color: $light-black;
+  div{
+    padding: 2em;
+  h3 {
+    color: $white;
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: "Shrikhand", cursive;
+    margin-bottom: 0.5em;
+  }
+  ul {
+    li {
+      margin-bottom: 0.5em;
+      a {
+        color: $white;
+        text-decoration: none;
+        i {
+          width: 10px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  }
+  
+}
+@media all and (min-width: 1200px){
+  footer{
+    display: flex;
+    flex-direction: column;
+    div{
+      width: 1200px;
+      align-self: center;
+      max-width: 1200px;
+    }
+  }
+}
