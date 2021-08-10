@@ -1,1 +1,35 @@
 @import "../main.scss";
+main{
+    figure{
+        img{
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+    >section{
+        background-color: $light-grey;
+        border-top-left-radius: 2em;
+        border-top-right-radius: 2em;
+        padding: 1.8em 1.3em;
+        margin-top: -2em;
+        position: relative;
+        z-index: 1;
+    }
+    #title {
+        display: flex;
+        flex-direction: column;
+        background-color: $light-grey;
+        padding: 2em;
+        text-align: left;
+        h2 {
+          font-weight: bold;
+          font-size: 1.5em;
+          margin-bottom: 0.8em;
+        }
+        p {
+          font-weight: lighter;
+          margin-bottom: 2.5em;
+          font-size: 1.1em;
+        }
+      }
+}
