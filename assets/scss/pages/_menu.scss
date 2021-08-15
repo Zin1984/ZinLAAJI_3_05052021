@@ -31,8 +31,9 @@ main {
   h3{
     border-bottom: 3px solid $green ;
     width: 40px;
-    padding-bottom: 15px;
-    margin-bottom: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    color: $new-black;
   }
   h4{
     color: $dark-black;
@@ -44,6 +45,11 @@ main {
   article{
     background-color: $white;
     margin-bottom: 15px;
-    border-radius: 10px;
+    border-radius: 15px;
+    padding: 0.5em 2em;
+  }
+  a{
+    margin-top: 0.5em;
   }
 }
+
