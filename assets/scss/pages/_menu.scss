@@ -14,42 +14,45 @@ main {
     margin-top: -2em;
     position: relative;
     z-index: 1;
-  }
-  #title {
-    display: flex;
-    flex-direction: row;
-    padding: 2em;
-    text-align: left;
-    justify-content: space-between;
-    h2 {
-      font-family: "Shrikhand", cursive;
-      font-weight: bold;
-      font-size: 1.5em;
-      margin-bottom: 0.8em;
+    header {
+      display: flex;
+      flex-direction: row;
+      padding: 2em;
+      text-align: left;
+      justify-content: space-between;
+      h2 {
+        font-family: "Shrikhand", cursive;
+        font-weight: bold;
+        font-size: 1.5em;
+        margin-bottom: 0.8em;
+      }
+    }
+    h3 {
+      border-bottom: 3px solid $green;
+      width: 40px;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+      color: $new-black;
+    }
+    article {
+      background-color: $white;
+      margin-bottom: 15px;
+      border-radius: 15px;
+      padding: 0.5em 2em;
+      div {
+        h4 {
+          color: $dark-black;
+        }
+        p {
+          color: $new-grey;
+          justify-items: stretch;
+        }
+      }
     }
   }
-  h3{
-    border-bottom: 3px solid $green ;
-    width: 40px;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-    color: $new-black;
-  }
-  h4{
-    color: $dark-black;
-  }
-  p{
-    color:$new-grey;
-    justify-items: stretch;
-  }
-  article{
-    background-color: $white;
-    margin-bottom: 15px;
-    border-radius: 15px;
-    padding: 0.5em 2em;
-  }
-  a{
+
+
+  a {
     margin-top: 0.5em;
   }
 }
-
