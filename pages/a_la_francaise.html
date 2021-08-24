@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A la Française - Ohmyfood</title>
-    <link rel="stylesheet" href="./assets/css/home.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/menu.css" type="text/css" />
     <meta
       name="description"
       content="Venez commander des plats d'exceptions chez A la Française sur le site Ohmyfood"
@@ -14,7 +14,9 @@
   <body>
     <!--loader-->
     <header>
-      <i class="fas fa-arrow-left"></i>
+      <a href="../index.html">
+        <i class="fas fa-arrow-left"></i>
+      </a>
       <h1><a href="../index.html">Ohmyfood</a></h1>
     </header>
 
@@ -26,11 +28,13 @@
         />
       </figure>
       <section>
-        <h2>A la française</h2>
-        <div class="animation-like">
-          <i class="fas fa-heart"></i>
-          <i class="far fa-heart"></i>
-        </div>
+        <header>
+          <h2>A la française</h2>
+          <div class="animation-like">
+            <i class="fas fa-heart"></i>
+            <i class="far fa-heart"></i>
+          </div>
+        </header>
         <section>
           <h3>ENTREES</h3>
           <article>
@@ -39,7 +43,7 @@
               <p>Aux zests d'orange</p>
             </div>
             <p>25€</p>
-            <div>
+            <div class="check">
               <i class="fas fa-check-circle"></i>
             </div>
           </article>
@@ -49,7 +53,7 @@
               <p>Carotte,panais,topinambour</p>
             </div>
             <p>35€</p>
-            <div>
+            <div class="check">
               <i class="fas fa-check-circle"></i>
             </div>
           </article>
@@ -59,7 +63,7 @@
               <p>Revisitée</p>
             </div>
             <p>20€</p>
-            <div>
+            <div class="check">
               <i class="fas fa-check-circle"></i>
             </div>
           </article>
@@ -72,7 +76,7 @@
               <p>Accompagnées d'une purée de panais</p>
             </div>
             <p>40€</p>
-            <div>
+            <div class="check">
               <i class="fas fa-check-circle"></i>
             </div>
           </article>
@@ -82,7 +86,7 @@
               <p>Et parmentier de pommes de terres</p>
             </div>
             <p>35€</p>
-            <div>
+            <div class="check">
               <i class="fas fa-check-circle"></i>
             </div>
           </article>
@@ -92,7 +96,7 @@
               <p>Sur son lit de gnocchis aux légumes</p>
             </div>
             <p>44€</p>
-            <div>
+            <div class="check">
               <i class="fas fa-check-circle"></i>
             </div>
           </article>
@@ -105,7 +109,7 @@
               <p>Et purée de noisettes</p>
             </div>
             <p>18€</p>
-            <div>
+            <div class="check">
               <i class="fas fa-check-circle"></i>
             </div>
           </article>
@@ -115,7 +119,7 @@
               <p>Revisité</p>
             </div>
             <p>22€</p>
-            <div>
+            <div class="check">
               <i class="fas fa-check-circle"></i>
             </div>
           </article>
@@ -125,28 +129,33 @@
               <p>Myrtilles et pâte d'amande</p>
             </div>
             <p>23€</p>
-            <div>
+            <div class="check">
               <i class="fas fa-check-circle"></i>
             </div>
           </article>
+          <a class="btn" href="#">Commander</a>
         </section>
       </section>
     </main>
 
     <footer>
-      <h3>ohmyfood</h3>
-      <ul>
-        <li>
-          <a href="#"><i class="fas fa-utensils"></i> Proposer un restaurant</a>
-        </li>
-        <li>
-          <a href="#"
-            ><i class="fas fa-hands-helping"></i> Devenir partenaire</a
-          >
-        </li>
-        <li><a href="#">Mentions légales</a></li>
-        <li><a href="mailto:ohmyfood-contact@gmail.com">Contact</a></li>
-      </ul>
+      <div>
+        <h3>ohmyfood</h3>
+        <ul>
+          <li>
+            <a href="#"
+              ><i class="fas fa-utensils"></i> Proposer un restaurant</a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><i class="fas fa-hands-helping"></i> Devenir partenaire</a
+            >
+          </li>
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="mailto:ohmyfood-contact@gmail.com">Contact</a></li>
+        </ul>
+      </div>
     </footer>
     <script
       src="https://kit.fontawesome.com/5da6fe0c36.js"
@@ -154,4 +163,3 @@
     ></script>
   </body>
 </html>
-

@@ -5,7 +5,7 @@ const RemoveEmptyScriptsPlugin = require('webpack-remove-empty-scripts');
 module.exports = {
    entry: {
         home: ["/assets/scss/pages/_home.scss"],
-        menus: ["/assets/scss/pages/_menu.scss"],
+        menu: ["/assets/scss/pages/_menu.scss"],
     },
     module: {
         rules: [

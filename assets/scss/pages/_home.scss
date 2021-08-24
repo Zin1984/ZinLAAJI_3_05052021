@@ -108,14 +108,7 @@ main {
           display: flex;
           flex-direction: row;
           justify-content: space-between;
-          .animation-like {
-            i {
-              font-size: 1.5em;
-              &:first-of-type {
-                display: none;
-              }
-            }
-          }
+         
           a {
             display: flex;
             flex-direction: column;
