@@ -1,7 +1,10 @@
 footer {
   background-color: $light-black;
   div{
+    max-width: 1000px;
     padding: 2em;
+    margin: 0 auto;
+
   h3 {
     color: $white;
     font-weight: bold;
@@ -26,14 +29,10 @@ footer {
   }
   
 }
-@media all and (min-width: 1200px){
+@media screen and (min-width:1000px){
   footer{
-    display: flex;
-    flex-direction: column;
     div{
-      width: 1200px;
-      align-self: center;
-      max-width: 1200px;
+      padding: 2em 0;
     }
   }
 }
