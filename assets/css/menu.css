@@ -163,7 +163,7 @@ h1 {
 
 .fa-heart::before {
   content: "";
-  position: absolute; }
+  position: relative; }
 
 .fa-heart:hover::before {
   font-weight: bold;
@@ -195,6 +195,47 @@ h1 {
   to {
     background-size: 100% 100%;
     color: black; } }
+
+/* Animations du menu */
+.menu_choix:hover .menu_choix_complement--check {
+  width: 80px;
+  transition-duration: 0.7s; }
+
+.menu_choix:hover i {
+  transform: rotate(360deg);
+  transition-duration: 0.8s; }
+
+.menu_choix:nth-child(2) {
+  -webkit-animation: apparition 2s backwards;
+          animation: apparition 2s backwards; }
+
+.menu_choix:nth-child(3) {
+  -webkit-animation: apparition 2s 0.2s backwards;
+          animation: apparition 2s 0.2s backwards; }
+
+.menu_choix:nth-child(4) {
+  -webkit-animation: apparition 2s 0.4s backwards;
+          animation: apparition 2s 0.4s backwards; }
+
+.menu_choix:nth-child(5) {
+  -webkit-animation: apparition 2s 0.6s backwards;
+          animation: apparition 2s 0.6s backwards; }
+
+@-webkit-keyframes apparition {
+  0% {
+    opacity: 0;
+    transform: translateY(15%); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes apparition {
+  0% {
+    opacity: 0;
+    transform: translateY(15%); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
 
 .animation-like i {
   font-size: 1.5em; }
