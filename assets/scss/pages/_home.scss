@@ -153,64 +153,64 @@ main {
 
     }
     
-}
-@media screen and (min-width:992px){
-  main{
-    #operation{
-      ol{
-        width: 70%;
-        align-self: center;
+// }
+// @media screen and (min-width:992px){
+//   main{
+//     #operation{
+//       ol{
+//         width: 70%;
+//         align-self: center;
   
-      }
-    }
-    #restaurants{
-      >div{
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      h2{
-        flex-basis: 100%;
-      }
-      article{
-        flex-basis: 48%;
-      }
-    }
-    }
+//       }
+//     }
+//     #restaurants{
+//       >div{
+//       flex-direction: row;
+//       flex-wrap: wrap;
+//       justify-content: space-between;
+//       h2{
+//         flex-basis: 100%;
+//       }
+//       article{
+//         flex-basis: 48%;
+//       }
+//     }
+//     }
 
-  }
+//   }
   
   
-}
-@media all and (min-width: 1200px) { /* responsive grands écrans (992px-1200px) */
-	main{
-    display: flex;
-    flex-direction: column;
-    #operation{
-      width: 1200px;
-      max-width: 1200px;
-      align-self: center;
-      ol{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        justify-content: space-between;
-        li{
-          flex-basis: 32%;
-        }
-      }
+// }
+// @media all and (min-width: 1200px) { /* responsive grands écrans (992px-1200px) */
+// 	main{
+//     display: flex;
+//     flex-direction: column;
+//     #operation{
+//       width: 1200px;
+//       max-width: 1200px;
+//       align-self: center;
+//       ol{
+//         display: flex;
+//         flex-direction: row;
+//         width: 100%;
+//         justify-content: space-between;
+//         li{
+//           flex-basis: 32%;
+//         }
+//       }
 
-    }
-    #restaurants{
-      display: flex;
-      flex-direction: column;
-      >div{
+//     }
+//     #restaurants{
+//       display: flex;
+//       flex-direction: column;
+//       >div{
         
-        max-width: 1200px;
-        align-self: center;
+//         max-width: 1200px;
+//         align-self: center;
 
-      }
-    }
-  }
+//       }
+//     }
+//   }
 
 }
 
